@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+    <title>Peppermint Robotics Careers</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="navbar-left">
+                <img src="image/1676965992878.jpg" alt="" width="50" height="50">
+                <span class="company-name">Peppermint Robotics</span>
+            </div>
+            <ul class="navbar-right">
+                <li><a href="#openings">Job Openings</a></li>
+                <li><a href="#culture">Our Culture</a></li>
+                <li><a href="#benefits">Benefits</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </nav>
+        
+        <div class="hero">
+            <h1>Careers at Peppermint Robotics</h1>
+            <p>Join our innovative team and shape the future of robotics.</p>
+        </div>
+    </header>
+
+    <!-- <section id="openings" class="job-openings">
+        <div class="openings-content">
+            <h2>Current Job Openings</h2>
+            <p>Join our talented team and contribute to cutting-edge robotics projects.</p>
+            <ul class="job-list">
+                <li>
+                    <h3>Software Engineer</h3>
+                    <p>We are looking for a skilled software engineer to develop innovative robotics software solutions.</p>
+                    <button class="apply-button">Apply Now</button>
+                </li>
+                <li>
+                    <h3>Mechanical Designer</h3>
+                    <p>Join our mechanical design team to create next-generation robotic systems.</p>
+                    <button class="apply-button">Apply Now</button>
+                </li>
+                
+            </ul>
+        </div>
+    </section> -->
+    <!-- Inside the job listings section -->
+<section id="openings" class="job-openings">
+    <div class="job-listing">
+        <h3>Software Development Engineer</h3>
+        <p>
+            <li>
+                Python,API,MongoDB
+            </li>
+            <li>
+                Dockers, Flutter
+            </li>
+            <li> Mobile/Web App Development</li>
+
+                   
+            
+
+            </p>
+        <button class="apply-button" onclick="openApplicationForm('')">Apply Now</button>
+    </div>
+    <div class="job-listing">
+        <h3>Robotics Engineer</h3>
+        <p>
+            <li>C++, ROS1/ROS2,</li>
+             <li> SLAM, OpenCV</li>
+              <li> CUDA, Pytorch. </li>
+              <li> TensorFlow, Navigation</li>
+        </p>
+        <button class="apply-button" onclick="openApplicationForm('')">Apply Now</button>
+    </div>
+    <div class="job-listing">
+        <h3>Supply Chain Engineer</h3>
+        <p><li>Lean Six Sigma</li>
+            <li>Supply chain management</li>
+             <li> Inventory</li>
+             <li> JIT</li></p>
+        <button class="apply-button" onclick="openApplicationForm('')">Apply Now</button>
+    </div>
+    
+    <!-- Add more job listings as needed -->
+</section>
+
+<!-- Hidden application form -->
+<div class="application-form-container" id="applicationFormContainer">
+    <div class="application-form">
+        <h2>Apply for Job: <span id="jobTitle"></span></h2>
+        <form action="submit_application.php" method="post" enctype="multipart/form-data">
+            <label for="resume">Attach Resume:</label>
+            <input type="file" name="resume" id="resume" required>
+            <input type="submit" value="Submit Application">
+        </form>
+    </div>
+</div>
+
+        <!-- Company culture and values -->
+        <section id="culture" class="company-culture">
+            <h2>Our Culture and Values</h2>
+            <div class="culture-values">
+                <div class="culture-value">
+                    <img src="image/digital.png" alt="Icon 1">
+                    <h3>Innovation</h3>
+                    <p>We embrace innovation and strive to push 
+                        the boundaries of what's possible in robotics.</p>
+                </div>
+                <div class="culture-value">
+                    <img src="image/icon2.png" alt="Icon 2">
+                    <h3>Collaboration</h3>
+                    <p>We foster a collaborative environment where diverse talents 
+                        come together to solve challenges.</p>
+                </div>
+                <div class="culture-value">
+                    <img src="image/icon3.png" alt="Icon 3">
+                    <h3>Excellence</h3>
+                    <p>We are committed to delivering excellence
+                         in every project we undertake.</p>
+                </div>
+                
+            </div>
+        </section>
+
+
+
+        <section id="benefits" class="employee-benefits">
+            <h2>Employee Benefits and Perks</h2>
+            <div class="benefits-list">
+                <div class="benefit-item">
+                    <img src="image/heartbeat.png" alt="Healthcare">
+                    <p>Comprehensive healthcare coverage</p>
+                </div>
+                <div class="benefit-item">
+                    <img src="image/working-hours.png" alt="Flexible Hours">
+                    <p>Flexible work hours</p>
+                </div>
+                <div class="benefit-item">
+                    <img src="image/professional-development.png" alt="Professional Development">
+                    <p>Professional development opportunities</p>
+                </div>
+                <!-- Add more benefits and perks as needed -->
+            </div>
+        </section>
+        
+
+    
+    
+
+    <section id="contact" class="contact">
+        <div class="contact-content">
+            <h2>Contact Us</h2>
+            <p>We'd love to hear from you! Feel free to reach out with any questions or inquiries.</p>
+            <form class="contact-form">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Type your message here"></textarea>
+    
+                <label for="address">Address:</label>
+                <input type="text" id="address" name="address" placeholder="123 Main Street, City, Country">
+    
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" placeholder="123-456-7890">
+    
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="example@peppermint.com">
+
+    
+                <button type="submit">Submit</button>
+            </form>
+            <div class="social-icons">
+                <a href="#"><img src="image/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="image/twitter.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com/in/narendra-singh-727b511b1"><img src="image/linkedin (1).png" alt="LinkedIn"></a>
+                <a href="#"><img src="image/instagram.png" alt="Instragram"></a>
+                <a href="https://getpeppermint.co/careers/"><img src="image/telegram.png" alt="Telegram"></a>
+                <!-- Add more social media icons as needed -->
+            </div>
+        </div>
+    </section>
+    
+    
+    
+
+    <footer>
+        <p>&copy; 2023 Peppermint Robotics. All rights reserved. Create By Er.Narnedra singh</p>
+    </footer>
+</body>
+</html>
